@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protein Comparison Tool</title>
+    <link rel="stylesheet" href="styles.css">cfgj
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Protein Comparison Tool</h1>
+            <p>Find and compare the best protein supplements</p>
+        </div>
+    </header>
+    <main class="container">
+        <section id="comparison-table">
+            <h2>Compare Proteins</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Brand</th>
+                        <th>Type</th>
+                        <th>Name</th>
+                        <th>Weight (g)</th>
+                        <th>Price (₹)</th>
+                        <th>Protein/Serving (g)</th>
+                    </tr>
+                </thead>
+                <tbody id="protein-data">
+                    <!-- Data dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="add-protein">
+            <h2>Add a Protein</h2>
+            <form id="protein-form">
+                <label for="brand">Brand:</label>
+                <select id="brand" required>
+                    <option value="" disabled selected>Select a Brand</option>
+                    <option value="MuscleBlaze">MB (MuscleBlaze)</option>
+                    <option value="Nackpro">Nackpro</option>
+                    <option value="Astis Atom">Astis Atom</option>
+                    <option value="Optimum Nutrition">Optimum Nutrition (ON)</option>
+                    <option value="MyProtein">MyProtein</option>
+                    <option value="BSN">BSN</option>
+                    <option value="Dymatize">Dymatize</option>
+                    <option value="Healthkart">Healthkart</option>
+                    <option value="Sinew">Sinew</option>
+                    <option value="GNC">GNC</option>
+                    <option value="Labrada">Labrada</option>
+                    <option value="MuscleTech">MuscleTech</option>
+                </select>
+
+                <label for="type">Type:</label>
+                <select id="type" required>
+                    <option value="" disabled selected>Select Type</option>
+                </select>
+
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="number" id="weight" placeholder="Weight (g)" required>
+                <input type="number" id="price" placeholder="Price (₹)" required>
+                <input type="number" id="protein" placeholder="Protein/Serving (g)" required>
+                <button type="submit">Add Protein</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Protein Comparison Tool. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
